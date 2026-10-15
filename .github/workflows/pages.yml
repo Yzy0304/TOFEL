@@ -1,0 +1,38 @@
+name: Deploy card studio
+on:
+  push:
+    branches: [main, codex/toefl-cards]
+  workflow_dispatch:
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+concurrency:
+  group: pages
+  cancel-in-progress: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --test tests/*.test.mjs
+      - run: node --check app.js
+      - name: Prepare static assets
+        run: |
+          mkdir -p _site/data _site/docs
+          cp index.html styles.css app.js core.js session.js favicon.svg _site/
+          cp data/cards.json _site/data/
+          cp docs/handbook.md _site/docs/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
