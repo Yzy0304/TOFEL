@@ -1,7 +1,7 @@
 # 托福口语与写作备考手册
 
 整理日期：2026 年 10 月 14 日  
-计划修订日期：2026 年 10 月 15 日  
+计划修订日期：2026 年 10 月 19 日
 考试计划：2026 年十二月底  
 目标：原 0–30 分制口语和写作各 25 分；按 ETS 对照表，两项均落在新制 5 分档。分档对照并非单题分数换算。
 
@@ -26,19 +26,19 @@
 | Email | 请求、咨询、报告问题、改期、道歉、邀请、感谢、跟进等表达 | 62 |
 | Discussion | 教育、科技、工作、环境、政策、文化等领域的观点与论证表达 | 60 |
 | Listen and Repeat | 校园与生活场景词汇、语块、完整句听辨与准确复述 | 36 |
-| Interview | 偏好、经历、评价和预测的观点与自然表达 | 24 |
+| Interview | 12 个主题的访谈问题、地道表达与原创展开示例 | 60 |
 
-写作素材占 122/182，约 67%。每天混合少量模块，同时轮换领域，优先让表达能被主动回忆。Build a Sentence 的语法速查保留为参考，不额外占用每日学习时间。
+写作素材占 122/218，约 56%。每天混合少量模块，同时轮换领域，优先让表达能被主动回忆。Build a Sentence 的语法速查保留为参考，不额外占用每日学习时间。
 
-| 学习环节 | 20 分钟基础版 | 30 分钟充裕版 |
+| 学习环节 | 20 分钟缩短版 | 30 分钟推荐版 |
 |---|---|---|
-| 到期旧卡复习 | 7 分钟 | 10 分钟 |
-| 新卡学习 | 8 分钟，通常 4 张 | 12 分钟，通常 4 张，可选加 1–2 张 |
-| 卡片主动回忆 | 4 分钟，填空、听后复述或换一个对象造句 | 6 分钟，加强薄弱卡和跨场景回忆 |
-| 记录结果 | 1 分钟 | 2 分钟 |
+| 到期旧卡复习 | 7 分钟 | 8 分钟 |
+| 新卡学习 | 8 分钟，建议手动调到 6–8 张 | 18 分钟，目标最多 16 张 |
+| 卡片主动回忆 | 4 分钟，填空、听后复述或换一个对象造句 | 3 分钟，加强薄弱卡和跨场景回忆 |
+| 记录结果 | 1 分钟 | 1 分钟 |
 | 合计 | **20 分钟** | **30 分钟** |
 
-新卡数量是上限建议，不是必须完成的硬指标。到期旧卡较多时，新卡降到 0–2 张；时间到后保存进度，不为补进度延长到 30 分钟以上。这里的单句回忆属于卡片训练，不要求写完整邮件或文章。
+自 2026 年 10 月 19 日起，推荐每天新学最多 16 张、学习 30 分钟，可拆为早晚各 15 分钟。新卡数量是上限建议，不是必须完成的硬指标。到期旧卡较多时，新卡降到 0–2 张；时间到后保存进度，不为补进度延长到 30 分钟以上。这里的单句回忆属于卡片训练，不要求写完整邮件或文章。16 张包括全模块新卡，不要求一天背完 16 篇回答；Interview 的完整示例用于学习展开方法，可分次查看。
 
 Email 官方练习为 7 分钟、Discussion 为 10 分钟的说明仅作为题型参考，不是每日卡片任务。完整练习由你自行完成。来源：[ETS 官方练习一](https://www.ets.org/pdfs/toefl/toefl-ibt-teachers-resources-practice-test-1.pdf)。
 
@@ -178,7 +178,7 @@ Listen and Repeat 和 Interview 均属于口语。场景词汇对听力也有帮
 
 ## 素材卡片库
 
-以下共 182 张：Email 62，Discussion 60，场景复述 36，Interview 24。编号用于网站与手册互相定位。例句为自编，既有主题来自原资料，新增场景按现行任务用途补充。
+以下共 218 张：Email 62，Discussion 60，场景复述 36，Interview 24。编号用于网站与手册互相定位。例句为自编，既有主题来自原资料，新增场景按现行任务用途补充。
 
 ### Email 写作素材
 
@@ -1294,173 +1294,729 @@ Listen and Repeat 和 Interview 均属于口语。场景词汇对听力也有帮
 
 ### Interview 观点与表达
 
+共 60 张，学习、运动、工作、科技、旅行、社交、成长、社区、时间管理、校园生活、环境、消费决策各 5 张。
+
+每张包含访谈问题、核心表达、单句例子、原创展开回答和搭配提示。下列回答依照切题展开、准确词汇与自然口语的方向编写，未经官方评分，不对应保证分数。回答中的经历为示例，请换成自己的真实内容；实际表现还取决于流畅度、发音与现场组织。参考：[ETS Interview 评分要求](https://www.ets.org/pdfs/toefl/speaking-rubrics.pdf)。
+
 #### interview-001 学习 偏好
 
+- 访谈问题：Do you prefer studying alone or with other people?
 - 表达：**work at my own pace**
 - 中文：按自己的节奏学习
 - 例句：I prefer studying alone because I can work at my own pace.
-- 搭配与迁移：继续补充一个具体学习任务与效果。
+- 搭配与迁移：搭配：at my own pace；holding anyone up 表示耽误别人。展开：先给偏好，再用一道具体难题说明，最后交代小组学习的适用场景。
+
+原创高分导向示例：
+
+I generally prefer studying alone because I can work at my own pace. If I'm struggling with a statistics problem, I can spend an extra ten minutes on it without holding anyone up. I still meet classmates before exams to compare approaches, but I get the most focused work done on my own.
 
 #### interview-002 学习 习惯
 
+- 访谈问题：How do you approach a difficult assignment?
 - 表达：**break a large task into smaller steps**
 - 中文：把大任务拆成小步骤
-- 例句：I usually break a large task into smaller steps so it feels more manageable.
-- 搭配与迁移：用自己的真实任务举例。
+- 例句：I try to break a large task into smaller steps before I start.
+- 搭配与迁移：搭配：break a task into steps；a sense of progress 表示进展感。展开：用论文的三个步骤解释方法与效果。
+
+原创高分导向示例：
+
+I try to break a large task into smaller steps before I start. For a research paper, that means choosing a question first, then finding sources, and only then writing a draft. Finishing one small step gives me a clear sense of progress. It also makes it easier to spot problems while I still have time to fix them.
 
 #### interview-003 学习 反思
 
+- 访谈问题：What do you do when you receive a disappointing grade?
 - 表达：**learn from my mistakes**
 - 中文：从错误中学习
-- 例句：Reviewing my notes helps me learn from my mistakes before the next test.
-- 搭配与迁移：解释一次错题如何改变做法。
+- 例句：I review the feedback so I can learn from my mistakes.
+- 搭配与迁移：搭配：learn from my mistakes；support my argument 表示支撑论点。展开：具体说明错误、调整动作和收获。
+
+原创高分导向示例：
+
+I usually review the feedback so I can learn from my mistakes. In one essay, my examples were relevant, but I hadn't explained how they supported my argument. For the next assignment, I added a sentence after each example to make that connection clear. That was more useful than simply rereading the textbook and hoping for a better result.
 
 #### interview-004 运动 坚持
 
+- 访谈问题：What helps you exercise regularly?
 - 表达：**stick to a routine**
 - 中文：坚持固定习惯
-- 例句：Exercising with a friend helps me stick to a routine.
-- 搭配与迁移：stick 的过去式是 stuck。
+- 例句：Having a friend to exercise with helps me stick to a routine.
+- 搭配与迁移：搭配：stick to a routine；fit around our classes 表示配合课表安排。展开：说明固定约定如何降低放弃的概率。
+
+原创高分导向示例：
+
+Having a friend to exercise with helps me stick to a routine. We arrange to meet at the gym twice a week, and knowing someone is waiting makes me less likely to cancel. We keep the sessions fairly short, so they fit around our classes. For me, a realistic plan with a bit of accountability works better than a demanding schedule.
 
 #### interview-005 运动 放松
 
+- 访谈问题：What do you usually do to relax after studying?
 - 表达：**clear my head**
 - 中文：放松头脑
-- 例句：A short walk helps me clear my head after a long day of studying.
-- 搭配与迁移：适合个人体验，不作医学保证。
+- 例句：A short walk helps me clear my head after studying.
+- 搭配与迁移：搭配：clear my head；get caught up in 表示陷入某事。展开：描述具体放松过程与个人感受，避免把体验说成普遍疗效。
+
+原创高分导向示例：
+
+A short walk usually helps me clear my head after studying. I leave my phone in my bag and walk around the neighborhood for twenty minutes. By the time I get back, I feel less caught up in whatever problem I was working on. It doesn't solve the assignment for me, but it makes starting again feel much easier.
 
 #### interview-006 运动 激励
 
+- 访谈问题：Do you enjoy exercising by yourself or with friends?
 - 表达：**keep each other motivated**
 - 中文：互相激励
 - 例句：My friends and I keep each other motivated when training gets difficult.
-- 搭配与迁移：each other 指相互。
+- 搭配与迁移：搭配：keep each other motivated；show up 表示按约到场。展开：用清晨跑步的小细节展示朋友的作用。
+
+原创高分导向示例：
+
+I enjoy exercising with friends because we keep each other motivated. Last semester, a friend and I started running before class. On mornings when one of us wanted to stay in bed, the other would send a quick message and suggest an easy route. We weren't competing with each other; we were just making it easier to show up consistently.
 
 #### interview-007 工作 平衡
 
+- 访谈问题：How do you balance work or study with family time?
 - 表达：**set aside time for**
 - 中文：为……留出时间
-- 例句：I set aside time for family even when my schedule is busy.
-- 搭配与迁移：set aside time for；可换名词。
+- 例句：I set aside time for family even during a busy week.
+- 搭配与迁移：搭配：set aside time for；be squeezed out 表示被其他安排挤掉。展开：给固定联系习惯并承认时间限制。
+
+原创高分导向示例：
+
+I set aside time for family even during a busy week. Usually, I call my parents on Sunday evening and have dinner with my sister once a week. Putting those plans in my calendar stops them from being squeezed out by coursework. I can't always spend a whole afternoon with them, but a short, regular conversation helps us stay connected.
 
 #### interview-008 工作 选择
 
+- 访谈问题：Would you prefer a job with flexible working hours?
 - 表达：**have more control over my schedule**
 - 中文：更能自主安排时间
 - 例句：With flexible hours, I would have more control over my schedule.
-- 搭配与迁移：回答假设题用 would。
+- 搭配与迁移：搭配：have control over my schedule；meet deadlines。展开：给一个可行安排，再说明团队协作的前提。
+
+原创高分导向示例：
+
+I'd prefer flexible hours because I would have more control over my schedule. For example, I could start earlier on days when I have an evening class, as long as I still meet my deadlines. I'd want clear times when the whole team is available, though. Flexibility is useful to me when it comes with reliable communication and shared expectations.
 
 #### interview-009 工作 边界
 
+- 访谈问题：How do you stop work from taking over your free time?
 - 表达：**switch off from work**
 - 中文：从工作状态抽离
-- 例句：Turning off notifications helps me switch off from work in the evening.
-- 搭配与迁移：偏口语表达；补个人细节。
+- 例句：Turning off work notifications helps me switch off from work in the evening.
+- 搭配与迁移：搭配：switch off from work；response expectations 指回复时间的约定。展开：说明原有困扰、沟通动作和例外条件。
+
+原创高分导向示例：
+
+Turning off notifications helps me switch off from work in the evening. During an internship, I kept checking messages over dinner, even when nothing was urgent. I eventually agreed on response expectations with my supervisor and stopped checking routine messages after seven. That boundary let me enjoy my evenings while still being available when something genuinely needed my attention.
 
 #### interview-010 科技 使用
 
+- 访谈问题：Has an app ever helped you build a better habit?
 - 表达：**keep track of my progress**
 - 中文：跟踪我的进展
-- 例句：A simple app helps me keep track of my progress without taking much time.
-- 搭配与迁移：keep track of。
+- 例句：A simple app helps me keep track of my progress.
+- 搭配与迁移：搭配：keep track of；pay attention to。展开：说明具体记录什么，以及为什么不过分依赖排名。
+
+原创高分导向示例：
+
+A simple running app helps me keep track of my progress. I record how far I run each week, so I can see improvements that would otherwise be easy to miss. I don't pay much attention to rankings or daily streaks. What matters to me is having a clear picture of my own progress and knowing when I need a rest.
 
 #### interview-011 科技 限制
 
+- 访谈问题：Does your phone ever make it harder to concentrate?
 - 表达：**get distracted by notifications**
 - 中文：被通知分散注意力
-- 例句：I sometimes get distracted by notifications, so I silence my phone while studying.
-- 搭配与迁移：因果与具体动作组成完整回答。
+- 例句：I get distracted by notifications when I'm trying to study.
+- 搭配与迁移：搭配：get distracted by；lose track of 表示跟不上思路。展开：描述分心机制，再给可执行的改变。
+
+原创高分导向示例：
+
+I definitely get distracted by notifications when I'm studying. Even a message that takes ten seconds to read can make me lose track of an argument. Now I put my phone out of reach and check it between study sessions. I still use it to contact classmates, but I try to decide when to check it instead of reacting to every alert.
 
 #### interview-012 科技 判断
 
+- 访谈问题：How do you decide whether information online is reliable?
 - 表达：**double-check information**
 - 中文：再次核实信息
-- 例句：I double-check information online before using it in an assignment.
-- 搭配与迁移：具体说明会核对哪些来源。
+- 例句：I double-check information before I use it in an assignment.
+- 搭配与迁移：搭配：double-check information；out of date 表示过时。展开：给核验来源和日期的具体步骤。
+
+原创高分导向示例：
+
+I double-check information before I use it in an assignment. If a post makes a surprising claim, I look for the original study or an official source rather than relying on the headline. I also check when it was published. It takes a little longer, but it saves me from building an argument around information that's incomplete or out of date.
 
 #### interview-013 旅行 收获
 
+- 访谈问题：What did a travel experience teach you about yourself?
 - 表达：**step outside my comfort zone**
 - 中文：走出舒适区
 - 例句：Traveling alone encouraged me to step outside my comfort zone.
-- 搭配与迁移：补具体挑战，不止于口号。
+- 搭配与迁移：搭配：step outside my comfort zone；rely on someone。展开：用取消的列车等具体事件支撑成长。
+
+原创高分导向示例：
+
+Traveling alone encouraged me to step outside my comfort zone. On my first solo trip, I had to ask strangers for directions and handle a canceled train without relying on a friend. I was nervous at first, but each small problem became more manageable once I dealt with it. The experience made me more willing to try unfamiliar things at home, too.
 
 #### interview-014 旅行 偏好
 
+- 访谈问题：Do you prefer visiting many places or spending longer in one place?
 - 表达：**get a feel for local life**
 - 中文：感受当地生活
-- 例句：I prefer staying longer in one place so I can get a feel for local life.
-- 搭配与迁移：for；适合旅行偏好题。
+- 例句：I prefer staying longer so I can get a feel for local life.
+- 搭配与迁移：搭配：get a feel for；stay with me 表示留下深刻印象。展开：用一次当地推荐解释慢旅行的价值。
+
+原创高分导向示例：
+
+I prefer spending longer in one place so I can get a feel for local life. Rather than rushing between attractions, I like visiting the same cafe a few times and exploring residential streets. On a recent trip, a shop owner recommended a small market I would never have found online. Those ordinary encounters tend to stay with me longer than famous landmarks.
 
 #### interview-015 旅行 预算
 
+- 访谈问题：How do you plan a trip when you don't have much money?
 - 表达：**make the most of a limited budget**
 - 中文：充分利用有限预算
 - 例句：Planning ahead helps me make the most of a limited budget.
-- 搭配与迁移：举出交通或住宿上的做法。
+- 搭配与迁移：搭配：make the most of a limited budget。展开：对比住宿与交通总成本，再解释如何取舍。
+
+原创高分导向示例：
+
+Planning ahead helps me make the most of a limited budget. I compare transport costs before choosing where to stay, because a cheap room can be expensive if it's far from everything. I also pick one or two activities I really care about and save money on the rest. That way, I can enjoy the trip without worrying about every small purchase.
 
 #### interview-016 社交 团队
 
+- 访谈问题：What is one benefit of working with people who think differently from you?
 - 表达：**hear a different point of view**
 - 中文：听到不同观点
-- 例句：Group projects let me hear a different point of view before making a decision.
-- 搭配与迁移：讲一个意见改变的经历。
+- 例句：Group projects let me hear a different point of view.
+- 搭配与迁移：搭配：hear a different point of view；settle on 表示选定。展开：用一次方案比较说明观点差异的价值。
+
+原创高分导向示例：
+
+Group projects let me hear a different point of view before I settle on an idea. In one class, I wanted our presentation to focus on statistics, while a teammate suggested starting with a personal story. We tried both approaches and found that the story made the data easier to follow. That experience reminded me that disagreement can improve the final result.
 
 #### interview-017 社交 合作
 
+- 访谈问题：What makes a group project run smoothly?
 - 表达：**divide the work fairly**
 - 中文：公平分工
-- 例句：I think teams work better when members divide the work fairly.
-- 搭配与迁移：解释如何分配而非只说 teamwork。
+- 例句：Teams work better when members divide the work fairly.
+- 搭配与迁移：搭配：divide the work fairly；fall behind 表示落后。展开：解释公平不等于机械平均，并给检查节点。
+
+原创高分导向示例：
+
+I think group projects run more smoothly when members divide the work fairly. That doesn't necessarily mean everyone gets the same number of tasks. A short video might take longer than several slides, so we discuss the effort involved before assigning work. We also set a check-in halfway through, which gives us time to help anyone who's falling behind.
 
 #### interview-018 社交 冲突
 
+- 访谈问题：How do you handle a disagreement with a friend or classmate?
 - 表达：**find common ground**
 - 中文：找到共同点
 - 例句：When people disagree, I try to find common ground first.
-- 搭配与迁移：举具体分歧及解决过程。
+- 搭配与迁移：搭配：find common ground；shared goal 指共同目标。展开：按分歧、共同诉求、具体安排组织经历。
+
+原创高分导向示例：
+
+When people disagree, I try to find common ground first. My roommate and I once argued about noise in the evening, but we both wanted the apartment to feel comfortable. Once we agreed on that, it was easier to discuss quiet hours and headphones. Focusing on the shared goal kept the conversation from turning into a debate about who was being unreasonable.
 
 #### interview-019 成长 间隔年
 
+- 访谈问题：Would taking time off before university appeal to you?
 - 表达：**take time to explore my interests**
 - 中文：花时间探索兴趣
-- 例句：During a gap year, I could take time to explore my interests before choosing a major.
-- 搭配与迁移：could 表可能，不是人人适合。
+- 例句：I would like to take time to explore my interests before choosing a major.
+- 搭配与迁移：搭配：take time to explore my interests；an excuse to 表示做某事的借口。展开：给支持理由，同时说明计划与预算条件。
+
+原创高分导向示例：
+
+Taking time off would appeal to me if I had a clear plan. I'd like to take time to explore my interests through a short internship or volunteer role before choosing a major. I wouldn't want the year to become an excuse to postpone decisions, though. I'd set a budget and a few specific goals so the experience had a clear purpose.
 
 #### interview-020 成长 压力
 
+- 访谈问题：What do you do when several deadlines arrive at once?
 - 表达：**feel overwhelmed by**
 - 中文：因……感到难以应付
 - 例句：I sometimes feel overwhelmed by deadlines, so I write down my priorities.
-- 搭配与迁移：by；讲应对方式，不停在问题。
+- 搭配与迁移：搭配：feel overwhelmed by；separate A from B。展开：展示排列任务的过程与一次实际应用。
+
+原创高分导向示例：
+
+I sometimes feel overwhelmed by deadlines, so I start by writing everything down. Then I separate what is urgent from what simply feels stressful and choose one task I can finish first. Last month, that helped me organize two essays and a presentation without switching constantly between them. Seeing a realistic plan on paper made the workload feel much more manageable.
 
 #### interview-021 成长 选择
 
+- 访谈问题：What helped you make an important educational or career decision?
 - 表达：**make a more informed choice**
 - 中文：作出更有依据的选择
-- 例句：Trying a short internship helped me make a more informed choice about my major.
-- 搭配与迁移：用实际接触到的信息支撑。
+- 例句：A short internship helped me make a more informed choice about my major.
+- 搭配与迁移：搭配：make a more informed choice；a clearer sense of。展开：对比原先想象与实际工作，说明新信息如何影响选择。
+
+原创高分导向示例：
+
+A short internship helped me make a more informed choice about my major. I had assumed marketing was mainly about coming up with creative ideas, but I spent much of the placement analyzing customer data. I found that part unexpectedly enjoyable. Trying the work gave me a clearer sense of what the subject involved than reading course descriptions alone ever could.
 
 #### interview-022 社区 参与
 
+- 访谈问题：Why might a student choose to volunteer locally?
 - 表达：**give something back to the community**
 - 中文：回馈社区
 - 例句：Volunteering gives me a chance to give something back to the community.
-- 搭配与迁移：具体说明服务对象和行动。
+- 搭配与迁移：搭配：give something back to the community；be willing to。展开：明确服务对象、具体行动与观察到的变化。
+
+原创高分导向示例：
+
+For me, volunteering is a way to give something back to the community while doing something practical. I help at a weekend homework club, where younger students sometimes just need someone to explain a question patiently. I can't solve every problem they face, but I can make that hour less frustrating. It's rewarding to see a student become more willing to ask for help.
 
 #### interview-023 社区 预测
 
+- 访谈问题：Do you think shared outdoor spaces will become more popular?
 - 表达：**become more common**
 - 中文：变得更普遍
-- 例句：I think community gardens will become more common as people look for shared outdoor spaces.
-- 搭配与迁移：预测后给原因并承认条件。
+- 例句：I think community gardens will become more common in cities.
+- 搭配与迁移：搭配：become more common；get to know。展开：预测后给需求原因，并说明长期运行条件。
+
+原创高分导向示例：
+
+I think community gardens will become more common in cities, especially where people don't have private outdoor space. They give residents a place to grow a few vegetables and get to know their neighbors. However, someone needs to organize watering and maintenance. I'd expect them to last longer when residents help plan the space rather than simply being given a finished garden.
 
 #### interview-024 社区 评价
 
+- 访谈问题：What local service makes the biggest difference to students?
 - 表达：**make a difference in everyday life**
 - 中文：改变日常生活
 - 例句：A reliable bus service can make a difference in everyday life for students.
-- 搭配与迁移：具体说明节省时间或改善可达性。
+- 搭配与迁移：搭配：make a difference in everyday life；just in case 表示以防万一。展开：把可靠性落实到上课、兼职和预算。
+
+原创高分导向示例：
+
+A reliable bus service can make a difference in everyday life for students. If a bus arrives when it's supposed to, I can plan my journey to class without leaving an extra half hour just in case. It also makes evening jobs and activities easier to reach. For students living farther from campus, that reliability can matter as much as the ticket price.
+
+#### interview-025 学习 讨论思路
+
+- 访谈问题：When is studying with another person especially useful?
+- 表达：**bounce ideas off**
+- 中文：和别人交流、碰撞想法
+- 例句：I like to bounce ideas off a classmate when I'm planning an essay.
+- 搭配与迁移：搭配：bounce ideas off someone，off 后接交流对象。展开：用同学的一个问题说明交流怎样改善思路。
+
+原创高分导向示例：
+
+I find a study partner especially useful when I'm planning an essay. It helps to bounce ideas off a classmate before I commit to an argument. Last week, a friend asked a question that exposed a gap in my explanation. That short conversation saved me from writing several pages around a weak idea, even though I wrote the actual essay alone.
+
+#### interview-026 学习 补齐基础
+
+- 访谈问题：How do you prepare for a test on a difficult subject?
+- 表达：**fill in the gaps in my understanding**
+- 中文：补齐理解中的缺漏
+- 例句：Practice questions help me fill in the gaps in my understanding.
+- 搭配与迁移：搭配：fill in the gaps in my understanding；revision 在这里指复习。展开：比较熟悉感与实际作答，说明纠错过程。
+
+原创高分导向示例：
+
+I start with practice questions because they help me fill in the gaps in my understanding. Reading a chapter can make everything feel familiar, but explaining an answer shows me what I actually know. If I get a question wrong, I review that specific concept and try a similar problem. This keeps my revision focused instead of turning it into hours of passive rereading.
+
+#### interview-027 运动 调整强度
+
+- 访谈问题：What advice would you give someone who wants to start exercising?
+- 表达：**ease into a new routine**
+- 中文：循序渐进地适应新习惯
+- 例句：I'd suggest that they ease into a new routine.
+- 搭配与迁移：搭配：ease into a routine；alternate A with B。展开：用刚开始跑步的安排解释循序渐进。
+
+原创高分导向示例：
+
+I'd suggest that they ease into a new routine rather than trying to change everything in a week. When I started running, I alternated short runs with walking and only went twice a week. That made the plan feel achievable, so I actually kept doing it. Once it became part of my schedule, I gradually increased the distance instead of forcing it immediately.
+
+#### interview-028 运动 生活平衡
+
+- 访谈问题：How do you stay active when your schedule is busy?
+- 表达：**fit exercise into my day**
+- 中文：把运动安排进日常
+- 例句：I try to fit exercise into my day in small ways.
+- 搭配与迁移：搭配：fit something into my day；get to the gym。展开：给忙碌日的替代方案，再说明周末如何补充。
+
+原创高分导向示例：
+
+I try to fit exercise into my day in small ways. If I can't get to the gym, I walk to the library or take a short break outside between classes. Those choices are easier to maintain than waiting for a completely free afternoon. I still enjoy a longer workout on weekends, but I don't treat a busy weekday as a reason to do nothing.
+
+#### interview-029 工作 快速适应
+
+- 访谈问题：How would you approach your first week in a new job?
+- 表达：**get up to speed**
+- 中文：尽快熟悉情况、跟上进度
+- 例句：I'd ask for examples of past work to help me get up to speed.
+- 搭配与迁移：搭配：get up to speed on a project；at an agreed time。展开：说明看范例和集中提问如何帮助入职。
+
+原创高分导向示例：
+
+In my first week, I'd ask for examples of past work to help me get up to speed. Seeing what a finished task looks like gives me a clearer target than a general explanation. I'd also keep a short list of questions and discuss them with my supervisor at an agreed time. That would help me learn without interrupting the team every few minutes.
+
+#### interview-030 工作 接受反馈
+
+- 访谈问题：What do you value in a supervisor or manager?
+- 表达：**take feedback on board**
+- 中文：认真接受并运用反馈
+- 例句：I value specific advice because it helps me take feedback on board.
+- 搭配与迁移：搭配：take feedback on board；feedback 不可数。展开：用一次邮件修改说明具体反馈的价值。
+
+原创高分导向示例：
+
+I value a supervisor who gives specific advice and explains why it matters. It's much easier to take feedback on board when I know what to change. During an internship, my supervisor showed me how a shorter email could make a request clearer. I used that approach in later messages, and it made communication with other teams much smoother.
+
+#### interview-031 科技 工具取舍
+
+- 访谈问题：How do you decide which apps to use?
+- 表达：**strike a balance between convenience and privacy**
+- 中文：在便利与隐私之间取得平衡
+- 例句：I try to strike a balance between convenience and privacy.
+- 搭配与迁移：搭配：strike a balance between A and B；access to。展开：用地图和计算器的不同权限需求作对比。
+
+原创高分导向示例：
+
+I try to strike a balance between convenience and privacy when choosing apps. A map app needs my location while I'm using it, but I don't see why a basic calculator should need access to my contacts. I check permissions and turn off anything that seems unnecessary. It takes a few minutes, but it lets me keep useful features without sharing information automatically.
+
+#### interview-032 科技 主动使用
+
+- 访谈问题：Have you changed the way you use social media?
+- 表达：**use technology more intentionally**
+- 中文：更有目的地使用科技
+- 例句：I've started to use technology more intentionally instead of opening apps out of habit.
+- 搭配与迁移：搭配：use technology intentionally；out of habit 表示出于习惯。展开：用打开应用前设定目的展示改变。
+
+原创高分导向示例：
+
+I've started to use technology more intentionally. I used to open social media whenever I had a spare minute, and those minutes added up. Now I decide what I want to do before opening an app, such as replying to a friend or checking an event. I still enjoy it, but it feels more like a choice and less like an automatic reaction.
+
+#### interview-033 旅行 应对变化
+
+- 访谈问题：How do you react when travel plans go wrong?
+- 表达：**take unexpected changes in stride**
+- 中文：从容应对意外变化
+- 例句：I try to take unexpected changes in stride when I travel.
+- 搭配与迁移：搭配：take changes in stride；leave some flexibility。展开：讲清意外、替代安排和心态调整。
+
+原创高分导向示例：
+
+I try to take unexpected changes in stride when I travel. Once, heavy rain canceled a hiking trip, so my friend and I visited a local museum instead. It wasn't the day we'd planned, but we learned about the area and had a good time. I still check bookings carefully; I just leave some flexibility so one change doesn't ruin the whole trip.
+
+#### interview-034 旅行 探索小众地点
+
+- 访谈问题：Do you like following a detailed travel itinerary?
+- 表达：**get off the beaten track**
+- 中文：去常规旅游路线以外的地方
+- 例句：I like to leave some time to get off the beaten track.
+- 搭配与迁移：搭配：get off the beaten track；a rough itinerary 指大致行程。展开：用一次街区探索说明保留空白的好处。
+
+原创高分导向示例：
+
+I like having a rough itinerary, but I leave some time to get off the beaten track. On one trip, we spent an afternoon exploring a quiet neighborhood instead of visiting another major attraction. We found a small bakery and talked with the owner about the area. I wouldn't skip every famous place, but those unplanned encounters often make a trip feel more personal.
+
+#### interview-035 社交 理解分歧
+
+- 访谈问题：What helps you discuss different opinions respectfully?
+- 表达：**see where someone is coming from**
+- 中文：理解对方的想法与出发点
+- 例句：I try to see where someone is coming from before I respond.
+- 搭配与迁移：搭配：see where someone is coming from；concern someone 指让某人担忧。展开：展示提问如何揭示分歧背后的真实原因。
+
+原创高分导向示例：
+
+I try to see where someone is coming from before I respond. If a classmate rejects my idea, I ask what concerns them instead of immediately defending it. In a group project, that helped me realize a teammate was worried about time, not the idea itself. Once we understood that, we could simplify the plan rather than arguing about whose approach was better.
+
+#### interview-036 社交 维系友谊
+
+- 访谈问题：How do you maintain friendships when you are busy?
+- 表达：**make time for the people who matter to me**
+- 中文：为重要的人留出时间
+- 例句：I try to make time for the people who matter to me.
+- 搭配与迁移：搭配：make time for；stay in touch。展开：分别说明本地朋友和远方朋友的联系办法。
+
+原创高分导向示例：
+
+I try to make time for the people who matter to me, even if we can't meet for long. A friend and I usually have lunch together once a week between classes. Because it's a regular plan, we don't have to organize something new every time. For friends who live farther away, I send voice messages so we can stay in touch without matching schedules exactly.
+
+#### interview-037 成长 调整预期
+
+- 访谈问题：How do you deal with a setback?
+- 表达：**put things in perspective**
+- 中文：更客观地看待事情
+- 例句：Talking to someone I trust helps me put things in perspective.
+- 搭配与迁移：搭配：put things in perspective；judge myself by。展开：呈现受挫后的想法、他人帮助和后续行动。
+
+原创高分导向示例：
+
+Talking to someone I trust helps me put things in perspective. When I didn't get an internship I wanted, I initially treated it as proof that I wasn't good enough. A teacher reminded me how competitive the role was and helped me identify other options. I was still disappointed, but I could focus on improving my application rather than judging myself by one result.
+
+#### interview-038 成长 承担责任
+
+- 访谈问题：What does being responsible mean to you?
+- 表达：**take ownership of my mistakes**
+- 中文：主动承认错误并承担责任
+- 例句：Being responsible means being willing to take ownership of my mistakes.
+- 搭配与迁移：搭配：take ownership of my mistakes；reduce the chance of。展开：承认问题后交代补救与预防措施。
+
+原创高分导向示例：
+
+To me, being responsible means being willing to take ownership of my mistakes. Once, I sent my project group an outdated file, which caused confusion before a meeting. I told them what had happened, uploaded the correct version, and changed how I labeled files. I couldn't undo the inconvenience, but I could fix the problem and reduce the chance of repeating it.
+
+#### interview-039 社区 建立联系
+
+- 访谈问题：What kind of local event would you like to organize?
+- 表达：**bring people together**
+- 中文：把人们聚到一起、增进联系
+- 例句：A neighborhood food fair could bring people together.
+- 搭配与迁移：搭配：bring people together；make space for。展开：说明活动设计怎样降低参与门槛。
+
+原创高分导向示例：
+
+I'd like to organize a small neighborhood food fair because it could bring people together without requiring a big commitment. Residents could bring a dish, share the story behind it, and meet people they usually only pass in the hallway. I'd keep it affordable and make space for people who don't cook. The main goal would be conversation rather than an elaborate event.
+
+#### interview-040 社区 倾听需求
+
+- 访谈问题：Should residents help decide how local facilities are improved?
+- 表达：**have a say in local decisions**
+- 中文：在社区决策中有发言权
+- 例句：Residents should have a say in local decisions that affect their daily lives.
+- 搭配与迁移：搭配：have a say in；affect their daily lives。展开：提出居民能提供的信息，并给可执行的参与方式。
+
+原创高分导向示例：
+
+I think residents should have a say in local decisions that affect their daily lives. They may notice problems that planners miss, such as a poorly lit path or a bus stop without shelter. I'd support a short survey followed by a public discussion of the options. Not every suggestion could be adopted, but explaining the final choice would make the process easier to trust.
+
+#### interview-041 时间管理 避免拖延
+
+- 访谈问题：Have you ever changed a habit that was affecting your studies?
+- 表达：**leave things until the last minute**
+- 中文：把事情拖到最后一刻
+- 例句：I used to leave things until the last minute.
+- 搭配与迁移：搭配：leave things until the last minute；set myself a deadline。展开：用一次赶工经历解释习惯为何改变。
+
+原创高分导向示例：
+
+I used to leave things until the last minute, especially when an assignment seemed straightforward. Then a group presentation took much longer than I expected, and I had to rush the final slides. Now I set myself an earlier deadline for a rough version. That gives me time to notice missing information and ask questions before the real deadline gets too close.
+
+#### interview-042 时间管理 优先排序
+
+- 访谈问题：How do you decide what to do first on a busy day?
+- 表达：**focus on what matters most**
+- 中文：把注意力放在最重要的事情上
+- 例句：I make a short list so I can focus on what matters most.
+- 搭配与迁移：搭配：focus on what matters most；routine messages。展开：解释紧急程度与准备成本如何共同影响排序。
+
+原创高分导向示例：
+
+I make a short list so I can focus on what matters most. I look at deadlines, but I also consider how much preparation each task needs. For example, I'd start researching a major essay before answering routine messages, even if the essay isn't due tomorrow. Choosing two or three priorities keeps me from spending the whole morning on small tasks that feel productive.
+
+#### interview-043 时间管理 留出余量
+
+- 访谈问题：Do you prefer a tightly planned day or a flexible one?
+- 表达：**build some flexibility into my schedule**
+- 中文：在日程中留出调整余地
+- 例句：I like to build some flexibility into my schedule.
+- 搭配与迁移：搭配：build flexibility into a schedule；throw something off 表示打乱。展开：用会议延误说明为什么需要缓冲时间。
+
+原创高分导向示例：
+
+I like having a plan, but I build some flexibility into my schedule. If I fill every hour, one delayed meeting can throw the rest of the day off. I usually leave a short gap between major tasks and keep one evening relatively free. That gives me room to handle unexpected work without canceling every personal plan or staying up much later than intended.
+
+#### interview-044 时间管理 合理拒绝
+
+- 访谈问题：How do you decide whether to take on an extra responsibility?
+- 表达：**avoid spreading myself too thin**
+- 中文：避免承担过多、精力分散
+- 例句：I check my existing commitments to avoid spreading myself too thin.
+- 搭配与迁移：搭配：spread myself too thin；let someone down 表示让人失望。展开：给拒绝与有限帮助的具体方案。
+
+原创高分导向示例：
+
+Before accepting an extra responsibility, I check my existing commitments to avoid spreading myself too thin. Last term, I turned down a second club role because I was already organizing an event. I offered to help for one afternoon instead. Saying no felt awkward, but it meant I could do the work I'd already promised properly rather than letting several people down later.
+
+#### interview-045 时间管理 专注一件事
+
+- 访谈问题：Do you think multitasking helps you work more efficiently?
+- 表达：**give one task my full attention**
+- 中文：把全部注意力放在一项任务上
+- 例句：I work better when I give one task my full attention.
+- 搭配与迁移：搭配：give a task my full attention；a train of thought 指思路。展开：区分复杂任务与简单家务，避免绝对化。
+
+原创高分导向示例：
+
+For demanding work, I do better when I give one task my full attention. Switching between an essay, messages, and a video makes it harder for me to keep a clear train of thought. I usually work on the essay for a short block, then check messages during a break. I might multitask with simple chores, but I avoid it when a task requires careful reasoning.
+
+#### interview-046 校园生活 归属感
+
+- 访谈问题：What helps new students settle into university life?
+- 表达：**feel part of the campus community**
+- 中文：感到融入校园集体
+- 例句：Joining a small club helped me feel part of the campus community.
+- 搭配与迁移：搭配：feel part of a community；settle into university life。展开：用入学初期与加入社团后的变化支撑观点。
+
+原创高分导向示例：
+
+Joining a small club helped me feel part of the campus community. During my first month, I recognized people in lectures but didn't really know anyone. At a photography club meeting, we had a shared activity to talk about, which made conversation easier. Seeing the same people each week gradually turned a large, unfamiliar campus into a place where I had familiar faces.
+
+#### interview-047 校园生活 主动求助
+
+- 访谈问题：What would you do if you were struggling in a course?
+- 表达：**reach out for support**
+- 中文：主动寻求支持
+- 例句：I'd reach out for support before I fell too far behind.
+- 搭配与迁移：搭配：reach out for support；fall behind。展开：说明求助前的准备及求助后的独立练习。
+
+原创高分导向示例：
+
+If I were struggling in a course, I'd reach out for support before I fell too far behind. I'd first identify a few questions and bring them to the instructor's office hours. That would make the conversation more useful than simply saying I didn't understand anything. I might also join a study group, but I'd still make sure I could solve the problems independently afterward.
+
+#### interview-048 校园生活 适应合住
+
+- 访谈问题：What advice would you give students sharing an apartment?
+- 表达：**set clear expectations from the start**
+- 中文：从一开始就明确彼此的预期
+- 例句：I'd encourage them to set clear expectations from the start.
+- 搭配与迁移：搭配：set clear expectations；resolve disagreements。展开：列出需要沟通的事项，并给实际约定。
+
+原创高分导向示例：
+
+I'd encourage students sharing an apartment to set clear expectations from the start. Discussing cleaning, visitors, and quiet hours may feel formal, but it prevents people from assuming everyone has the same habits. My roommate and I made a simple cleaning schedule and agreed to mention problems early. That made small disagreements easier to resolve before either of us became seriously annoyed.
+
+#### interview-049 校园生活 利用资源
+
+- 访谈问题：Which university resource would you recommend to a new student?
+- 表达：**make good use of campus resources**
+- 中文：充分利用校园资源
+- 例句：I'd recommend the writing center so students can make good use of campus resources.
+- 搭配与迁移：搭配：make good use of；apply advice to。展开：说明写作中心提供怎样的帮助，以及如何迁移到后续作业。
+
+原创高分导向示例：
+
+I'd recommend the writing center because it helped me make good use of campus resources beyond my regular classes. A tutor didn't rewrite my essay; she asked questions that helped me spot unclear connections between paragraphs. I could apply that advice to later assignments as well. New students sometimes assume support is only for emergencies, but it can also help them improve work that's already fairly solid.
+
+#### interview-050 校园生活 平衡活动
+
+- 访谈问题：How involved should students be in extracurricular activities?
+- 表达：**find a balance between coursework and activities**
+- 中文：在课程与课外活动之间找到平衡
+- 例句：Students need to find a balance between coursework and activities.
+- 搭配与迁移：搭配：find a balance between A and B；count on someone。展开：给选择活动的原则和考试周的调整办法。
+
+原创高分导向示例：
+
+I think students need to find a balance between coursework and activities. A club can help you make friends and develop practical skills, but joining too many can leave little time to study properly. I prefer one activity I can contribute to consistently. During exam weeks, I reduce my involvement and let the organizer know early, rather than disappearing when the group is counting on me.
+
+#### interview-051 环境 日常行动
+
+- 访谈问题：What is one practical change students can make to reduce waste?
+- 表达：**cut down on single-use plastic**
+- 中文：减少一次性塑料的使用
+- 例句：Students can cut down on single-use plastic by carrying a reusable bottle.
+- 搭配与迁移：搭配：cut down on；single-use 修饰一次性用品。展开：把个人习惯与校园设施条件联系起来。
+
+原创高分导向示例：
+
+One practical change is to cut down on single-use plastic by carrying a reusable bottle. I started doing that after noticing how many empty bottles I threw away during a normal week. It's a small action, but it's easy to repeat, especially when there are refill stations on campus. I'd also support better access to those stations so the convenient option creates less waste.
+
+#### interview-052 环境 延长使用
+
+- 访谈问题：Would you take part in a campus secondhand sale?
+- 表达：**give old items a second life**
+- 中文：让旧物重新发挥作用
+- 例句：A campus sale can give old items a second life.
+- 搭配与迁移：搭配：give an item a second life；affordable basics 指平价必需品。展开：说明买卖双方需求和物品检查条件。
+
+原创高分导向示例：
+
+I'd definitely take part in a campus secondhand sale because it can give old items a second life. Students moving out often have lamps or kitchen equipment they no longer need, while new students are looking for affordable basics. I'd want items checked and clearly labeled, though. A well-organized sale could reduce waste while making it easier for people to find something they can actually use.
+
+#### interview-053 环境 便利选择
+
+- 访谈问题：How can a university encourage environmentally friendly behavior?
+- 表达：**make the sustainable option easier**
+- 中文：让可持续的选择更容易实行
+- 例句：A university should make the sustainable option easier for students.
+- 搭配与迁移：搭配：make an option easier；rely on。展开：用垃圾桶位置和标签说明设施如何影响行动。
+
+原创高分导向示例：
+
+I think a university should make the sustainable option easier rather than relying only on posters. For example, recycling bins need clear labels and should be placed where students actually eat and study. If sorting waste requires a long walk, fewer people will do it consistently. Clear information still matters, but the design of everyday spaces can make following that advice much more practical.
+
+#### interview-054 环境 成本权衡
+
+- 访谈问题：Should cities spend more money on public transport?
+- 表达：**weigh the costs against the benefits**
+- 中文：权衡成本与收益
+- 例句：Cities need to weigh the costs against the benefits of improving public transport.
+- 搭配与迁移：搭配：weigh the costs against the benefits；investment 指投入。展开：用增加班次的例子说明怎样评估项目。
+
+原创高分导向示例：
+
+I think cities should improve public transport, but they need to weigh the costs against the benefits of each project. More frequent buses on a crowded route could help many commuters without requiring an entirely new system. I'd look at who would use the service and whether it connects people to jobs and schools. A visible project isn't automatically the most useful investment.
+
+#### interview-055 环境 长期习惯
+
+- 访谈问题：Why do people sometimes struggle to maintain environmentally friendly habits?
+- 表达：**turn good intentions into everyday habits**
+- 中文：把良好意愿变成日常习惯
+- 例句：People need practical support to turn good intentions into everyday habits.
+- 搭配与迁移：搭配：turn intentions into habits；a workable solution 指可行方案。展开：通过自行车停放问题解释意愿与行动的差距。
+
+原创高分导向示例：
+
+People often need practical support to turn good intentions into everyday habits. I wanted to cycle to class, but I worried about leaving my bike outside all day. Once secure parking became available near my building, cycling felt much easier to maintain. For me, the problem wasn't a lack of concern about the environment; it was an everyday obstacle that needed a workable solution.
+
+#### interview-056 消费决策 耐用性
+
+- 访谈问题：Do you usually choose the cheapest product available?
+- 表达：**get more use out of something**
+- 中文：更充分、更长久地使用某件东西
+- 例句：I'd rather get more use out of something than replace it every few months.
+- 搭配与迁移：搭配：get more use out of something；better value 指更划算。展开：用背包的耐用细节说明价格与价值的区别。
+
+原创高分导向示例：
+
+I don't always choose the cheapest product. I'd rather get more use out of something than replace it every few months. When buying a backpack, for example, I check the stitching, zippers, and warranty before comparing prices. I still have a budget, but a slightly more expensive bag can be better value if it handles daily use and lasts through several semesters.
+
+#### interview-057 消费决策 冲动购物
+
+- 访谈问题：How do you avoid buying things you don't really need?
+- 表达：**sleep on it**
+- 中文：隔一晚再决定是否购买
+- 例句：If a purchase isn't urgent, I usually sleep on it.
+- 搭配与迁移：搭配：sleep on it，表示考虑一晚再决定；it 指前面提到的购买决定。展开：按等待、重新评估和预算检查说明方法。
+
+原创高分导向示例：
+
+If a purchase isn't urgent, I usually sleep on it, especially when I notice something during a sale. I save the item and come back to it the next day. Quite often, the excitement has faded and I realize I already own something similar. If I still want it, I check whether it fits my budget and how often I'd actually use it.
+
+#### interview-058 消费决策 信息筛选
+
+- 访谈问题：How much do you rely on online reviews before buying something?
+- 表达：**take online reviews with a grain of salt**
+- 中文：对网上评价保留一点判断
+- 例句：I take online reviews with a grain of salt.
+- 搭配与迁移：搭配：take something with a grain of salt；pay attention to。展开：说明如何寻找重复出现且与自己相关的信息。
+
+原创高分导向示例：
+
+I take online reviews with a grain of salt, even though I read them regularly. A single very positive or negative comment doesn't tell me much, so I look for repeated details across several reviews. When choosing headphones, I'd pay attention if many people mention uncomfortable ear pads. I also check whether the reviewer uses the product in a way that's similar to mine.
+
+#### interview-059 消费决策 需求判断
+
+- 访谈问题：How do you decide whether a new device is worth buying?
+- 表达：**separate what I need from what I want**
+- 中文：区分需要和想要
+- 例句：I try to separate what I need from what I want before buying a device.
+- 搭配与迁移：搭配：separate A from B；handle essential tasks。展开：给继续使用和考虑更换的明确条件。
+
+原创高分导向示例：
+
+Before buying a new device, I try to separate what I need from what I want. My laptop may look dated, but if it runs my coursework software reliably, a newer design isn't a strong reason to replace it. I'd consider upgrading if repairs became expensive or it could no longer handle essential tasks. That gives me a practical standard instead of chasing every release.
+
+#### interview-060 消费决策 体验优先
+
+- 访谈问题：Would you rather spend extra money on possessions or experiences?
+- 表达：**spend money on experiences**
+- 中文：把钱花在体验上
+- 例句：I'd usually rather spend money on experiences than buy more possessions.
+- 搭配与迁移：搭配：spend money on experiences；lasting value 指持久价值。展开：用烹饪课说明理由，并给日常必需品的例外。
+
+原创高分导向示例：
+
+I'd usually rather spend money on experiences, especially something I can share with a friend. A cooking class, for example, gives us an enjoyable afternoon and a skill we can use afterward. That said, I'd buy a useful item if I needed it every day. My choice depends on the lasting value I expect to get, rather than a fixed rule about which category is better.
 
 ## 自编情境练习与参考回答
 
@@ -1874,22 +2430,22 @@ I think a simple app can be useful because it helps me keep track of my progress
 
 ### 新卡与复习节奏
 
-- 周一至周六：基础计划每天新学 4 张，搭配到期旧卡复习。
+- 周一至周六：每天目标新学 16 张，搭配到期旧卡复习，默认 30 分钟。
 - 周日：不安排新卡，只复习薄弱卡和做卡片主动回忆。
 - 初次学习：理解含义和搭配，听或读例句，然后遮住英文主动回忆。
 - 复习间隔：可按 1、3、7、14 天逐步延长；出错则回到较短间隔。这里是建议规则，文档不会自动计算或提醒。
 - 内容优先：Email 和 Discussion；场景复述与 Interview 轮换穿插。
 - 实际负担优先于日历：漏学的卡片顺延，第二天不翻倍；不把到期数量当作必须当天全部清空的债务。
 
-按每天 4 张、周日复习的基础计划，182 张卡片预计在 **2026 年 12 月 7 日**完成首次接触。这是计划日期，不代表全部掌握；遇到漏学或需要更多复习可自然顺延。
+从 2026 年 10 月 19 日起，按每天 16 张、周日复习、全部从零开始计算，218 张卡片预计在 **2026 年 11 月 3 日**完成首次接触；已学卡跳过，优先继续未学卡。这是计划日期，不代表全部掌握；遇到漏学或需要更多复习可自然顺延。
 
 ### 分阶段目标
 
 | 时间 | 卡片学习目标 | 进度怎么判断 |
 |---|---|---|
-| 10 月 15 日至 10 月 31 日 | 建立每天 20–30 分钟习惯，熟悉不同领域的卡片 | 记录实际时长，识别常错搭配 |
-| 11 月 1 日至 12 月 7 日 | 持续学习新卡并复习，逐步接触全部 182 张 | 关注主动回忆正确率，不只看浏览数量 |
-| 12 月 8 日至 12 月 20 日 | 原则上不强加新卡，集中填空、听后复述和跨场景回忆 | 薄弱卡减少，相隔多天仍能回忆 |
+| 10 月 19 日至 11 月 3 日 | 每天新学最多 16 张，周日复习，完成全部 218 张首轮接触 | 记录实际时长和主动回忆正确率 |
+| 11 月 4 日至 11 月 30 日 | 集中到期复习、填空、听后复述和跨场景回忆 | 薄弱卡减少，相隔多天仍能回忆 |
+| 12 月 1 日至 12 月 20 日 | 持续巩固高复用表达与易错搭配 | 关注延迟回忆和情境运用 |
 | 12 月 21 日至考试 | 保持熟练度，优先高复用表达与个人易错卡 | 能在新情境说出或写出合适的一句 |
 
 具体考试日尚未确定，打卡表暂列至 12 月 31 日；确定考试日期后截断或调整即可。此计划只管理卡片学习，完整写作和整套考试练习由你自行安排。

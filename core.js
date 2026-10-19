@@ -9,7 +9,7 @@ const ensureDay = (state, key) => state.days[key] ??= emptyDay();
 const addUnique = (items, value) => { if (!items.includes(value)) items.push(value); };
 
 export function createState() {
-  return { version: 1, settings: { dailyMinutes: 20, newLimit: 4 }, cards: {}, days: {}, session: null };
+  return { version: 1, settings: { dailyMinutes: 30, newLimit: 16, planVersion: 3 }, cards: {}, days: {}, session: null };
 }
 
 export function dayKey(dateOrTimestamp = new Date()) {
@@ -35,7 +35,8 @@ export function buildQueue(cards, state, now = Date.now(), options = {}) {
   const quota = options.reviewOnly || sunday ? 0 : Math.max(0, state.settings.newLimit - (state.days[key]?.newIds.length ?? 0));
   const candidates = filtered.filter(card => !has(state.cards, card.id));
   const fresh = [];
-  const pattern = ['email', 'discussion', 'repeat', 'email', 'discussion', 'interview'];
+  const pattern = ['email', 'discussion', 'repeat', 'email', 'interview', 'discussion', 'email', 'interview',
+    'discussion', 'repeat', 'email', 'discussion', 'interview', 'email', 'discussion', 'interview'];
   let previousDomain = due.at(-1)?.domain;
   let turn = cards.filter(card => has(state.cards, card.id)).length;
   while (fresh.length < quota && candidates.length) {
@@ -47,7 +48,7 @@ export function buildQueue(cards, state, now = Date.now(), options = {}) {
     const [card] = candidates.splice(index, 1);
     fresh.push(card); previousDomain = card.domain;
   }
-  const limit = options.limit ?? 20;
+  const limit = options.limit ?? (due.length + fresh.length);
   if (!Number.isInteger(limit) || limit < 0) throw new TypeError('Invalid queue limit');
   return [...due, ...fresh].slice(0, limit);
 }
@@ -192,12 +193,18 @@ export function validateImport(data, knownIdsArray) {
   }
   fields(source, ['version', 'settings', 'cards', 'days', 'session'], 'state');
   if (source.version !== 1) invalid('version');
-  fields(source.settings, ['dailyMinutes', 'newLimit'], 'settings');
+  fields(source.settings, ['dailyMinutes', 'newLimit', 'planVersion'], 'settings');
+  if (has(source.settings, 'planVersion') && ![2, 3].includes(source.settings.planVersion)) invalid('plan version');
   if (![20, 30].includes(source.settings.dailyMinutes)) invalid('daily minutes');
-  number(source.settings.newLimit, 0, 6, 'new limit', true);
+  number(source.settings.newLimit, 0, 16, 'new limit', true);
   const known = new Set(knownIdsArray);
   const result = createState();
-  result.settings = { dailyMinutes: source.settings.dailyMinutes, newLimit: source.settings.newLimit };
+  // Upgrade the former default once; later manual choices keep their own quota.
+  const previousPlan = source.settings.planVersion ?? 1;
+  const upgradeDefault = (previousPlan === 1 && source.settings.newLimit === 4)
+    || (previousPlan === 2 && source.settings.newLimit === 12);
+  result.settings = { dailyMinutes: upgradeDefault ? 30 : source.settings.dailyMinutes,
+    newLimit: upgradeDefault ? 16 : source.settings.newLimit, planVersion: 3 };
   plain(source.cards, 'cards');
   for (const [id, record] of Object.entries(source.cards)) {
     if (!known.has(id)) invalid('unknown card');

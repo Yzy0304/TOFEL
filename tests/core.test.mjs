@@ -20,8 +20,8 @@ test('exports complete public API', () => {
 });
 test('fresh state is independent and has expected defaults', () => {
   const a=createState(), b=createState();
-  assert.deepEqual(a,{version:1,settings:{dailyMinutes:20,newLimit:4},cards:{},days:{},session:null});
-  a.settings.newLimit=2; assert.equal(b.settings.newLimit,4);
+  assert.deepEqual(a,{version:1,settings:{dailyMinutes:30,newLimit:16,planVersion:3},cards:{},days:{},session:null});
+  a.settings.newLimit=2; assert.equal(b.settings.newLimit,16);
 });
 test('day boundary uses Shanghai rather than host timezone', () => {
   assert.equal(dayKey('2026-10-14T15:59:59Z'),'2026-10-14');
@@ -29,7 +29,7 @@ test('day boundary uses Shanghai rather than host timezone', () => {
   assert.throws(() => dayKey('invalid'));
 });
 test('new queue observes quota and interleaves modules and domains', () => {
-  const state=createState(); const q=buildQueue(cards,freeze(state),now);
+  const state=createState(); state.settings.newLimit=4; const q=buildQueue(cards,freeze(state),now);
   assert.equal(q.length,4); assert.ok(new Set(q.map(c=>c.module)).size>=2); assert.ok(new Set(q.map(c=>c.domain)).size>=2);
   assert.deepEqual(buildQueue(cards,state,now),q);
   assert.equal(buildQueue(cards,state,now,{module:'email',domain:'校园'})[0].id,'e2');
@@ -110,7 +110,7 @@ test('import roundtrip sanitizes envelope and clears session without mutation', 
 test('invalid imports reject configuration, unknown cards, impossible dates and malformed numeric fields', () => {
   const base=recordReview(createState(),'e1','good',now);
   const mutate=change=>{const data=structuredClone(base);change(data);assert.throws(()=>validateImport(data,ids));};
-  mutate(s=>s.version=2); mutate(s=>s.settings.newLimit=7); mutate(s=>s.settings.dailyMinutes=25);
+  mutate(s=>s.version=2); mutate(s=>s.settings.newLimit=17); mutate(s=>s.settings.dailyMinutes=25);
   mutate(s=>s.cards.other=s.cards.e1); mutate(s=>s.cards.e1.dueAt=Infinity); mutate(s=>s.cards.e1.streak=-1);
   mutate(s=>s.cards.e1.correctDates=['2026-02-30']);
   mutate(s=>s.days['2026-02-30']=s.days[dayKey(now)]); mutate(s=>s.days[dayKey(now)].seconds=90000);
@@ -129,7 +129,7 @@ test('import rejects prototype payloads and non-plain objects', () => {
 test('weighted new-card rotation includes speaking/listening before writing is exhausted', () => {
   const library=['email','discussion','repeat','interview'].flatMap(module =>
     Array.from({length:6},(_,i)=>({id:`${module}-${i}`,module,domain:i%2?'工作':'教育'})));
-  let state=createState();
+  let state=createState(); state.settings.newLimit=4;
   const first=buildQueue(library,state,now);
   assert.ok(first.some(card=>['repeat','interview'].includes(card.module)));
   assert.equal(first.filter(card=>['email','discussion'].includes(card.module)).length,3);
@@ -180,4 +180,65 @@ test('hard review resets stability streak and retains correct date history', () 
   state=recordReview(state,'e1','good',now+86400000);
   assert.equal(progressCounts(state,cards,now+86400000).stable,0);
   assert.equal(state.cards.e1.intervalDays,1);
+});
+
+
+test('sixteen-card plan keeps all due reviews ahead of new cards and counts same-day introductions', () => {
+  const library=Array.from({length:50},(_,i)=>({id:`card-${i}`,module:['email','discussion','repeat','interview'][i%4],domain:i%2?'工作':'教育'}));
+  let state=createState();
+  for(const card of library.slice(0,25)) state=recordReview(state,card.id,'good',now-2*86400000);
+  const queue=buildQueue(library,state,now);
+  assert.equal(queue.length,41);
+  assert.ok(queue.slice(0,25).every(card=>state.cards[card.id]));
+  assert.equal(queue.filter(card=>!state.cards[card.id]).length,16);
+  for(const card of queue.slice(25,30)) state=recordReview(state,card.id,'good',now);
+  assert.equal(buildQueue(library,state,now).filter(card=>!state.cards[card.id]).length,11);
+  assert.equal(buildQueue(library,state,now,{limit:10}).length,10);
+});
+
+test('legacy default plan upgrades once while keeping study history and later choices', () => {
+  let legacy=recordReview(createState(),'e1','good',now);
+  legacy.settings={dailyMinutes:20,newLimit:4};
+  const upgraded=validateImport(legacy,ids);
+  assert.deepEqual(upgraded.settings,{dailyMinutes:30,newLimit:16,planVersion:3});
+  assert.deepEqual(upgraded.cards,legacy.cards);
+  assert.deepEqual(upgraded.days,legacy.days);
+  assert.equal(legacy.settings.newLimit,4);
+  upgraded.settings.newLimit=4; upgraded.settings.dailyMinutes=20;
+  assert.deepEqual(validateImport(upgraded,ids).settings,upgraded.settings);
+  legacy.settings={dailyMinutes:20,newLimit:2};
+  assert.equal(validateImport(legacy,ids).settings.newLimit,2);
+  assert.equal(validateImport(legacy,ids).settings.dailyMinutes,20);
+});
+
+test('new plan backup roundtrips sixteen cards and rejects malformed plan versions', () => {
+  const state=createState(); state.settings.newLimit=16;
+  assert.deepEqual(validateImport({app:'toefl-card-studio',version:1,state},ids),state);
+  for(const planVersion of [0,1,4,'3',null]) {
+    const invalid=structuredClone(state); invalid.settings.planVersion=planVersion;
+    assert.throws(()=>validateImport(invalid,ids));
+  }
+});
+
+
+test('the former twelve-card default upgrades while a chosen lower quota survives reload',()=>{
+ const old=recordReview(createState(),'e1','good',now);
+ old.settings={dailyMinutes:30,newLimit:12,planVersion:2};
+ const updated=validateImport(old,ids);
+ assert.equal(updated.settings.newLimit,16);
+ assert.equal(updated.settings.planVersion,3);
+ assert.deepEqual(updated.cards,old.cards);
+ assert.deepEqual(updated.days,old.days);
+ updated.settings.newLimit=12;
+ assert.equal(validateImport(updated,ids).settings.newLimit,12);
+ old.settings.newLimit=6;
+ assert.equal(validateImport(old,ids).settings.newLimit,6);
+});
+
+test('a sixteen-card day interleaves five Email, five Discussion, two Repeat and four Interview cards',()=>{
+ const library=['email','discussion','repeat','interview'].flatMap(module=>Array.from({length:20},(_,i)=>({id:`${module}-${i}`,module,domain:i%2?'工作':'学习'})));
+ const queue=buildQueue(library,createState(),now);
+ assert.equal(queue.length,16);
+ const count=Object.fromEntries(['email','discussion','repeat','interview'].map(module=>[module,queue.filter(c=>c.module===module).length]));
+ assert.deepEqual(count,{email:5,discussion:5,repeat:2,interview:4});
 });
