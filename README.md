@@ -19,9 +19,15 @@ Interview 覆盖 12 个主题，每主题 5 张，均含访谈问题、核心表
 
 [查看每日打卡表](./docs/study-plan.md) · [查看完整备考手册](./docs/handbook.md)
 
+## 答案评判
+
+输入后可提交「语法错误／表达不地道／完全正确」三类评判，显示问题位置、原因、最小修改和可选自然表达，并另行检查题意。只有当天首次未看答案的独立作答更新掌握度；不同日期连续两次独立正确才计为经作答验证稳定。错误后的纠错重试单独记录，不刷掌握度。
+
+Mac 本机版可通过官方 Sign in with ChatGPT 授权使用订阅额度。在线版和手机保留基础卡片及参考匹配功能。[使用说明、隐私与研究参考](./docs/assessment.md)。
+
 ## 本地运行
-使用 Node 22+ 或支持 ES modules 的现代浏览器，静态服务即可，无依赖安装步骤。
-终端在仓库目录运行 `python3 -m http.server 4173`，打开 http://localhost:4173 。不要直接双击 index.html，因为浏览器会限制本地 JSON 读取。
+需要 Node.js 22+，无需安装额外运行依赖。双击 `启动词境.command` 或运行 `npm start`，打开终端显示的 http://127.0.0.1:4173 ，在学习设置中连接 ChatGPT 订阅。
+仅需静态卡片功能时可运行 `npm run start:static`；静态服务不提供模型接口。不要直接双击 index.html，因为浏览器会限制本地 JSON 读取。
 
 验证：`node --test tests/*.test.mjs`；语法检查：`node --check app.js`。
 
@@ -31,7 +37,9 @@ Interview 覆盖 12 个主题，每主题 5 张，均含访谈问题、核心表
 ## 文件
 - index.html / styles.css：响应式界面
 - app.js：学习交互、语音、录音和本地保存
-- core.js：队列、间隔复习、进度、导入校验
+- core.js：队列、间隔复习、独立作答证据、进度与导入校验
+- assessment.js / assessment-ui.js：评判协议与反馈界面
+- server.mjs / local：本机授权与模型评判服务（不部署到 Pages）
 - data/cards.json：素材库
 - docs/handbook.md：完整备考手册
 - docs/study-plan.md：每日打卡表

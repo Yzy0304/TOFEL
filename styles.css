@@ -10,3 +10,15 @@
 .interview-reference h3{margin:12px 0 8px;font-size:15px}
 .interview-reference .example{line-height:1.8}
 .interview-question{font-size:16px;line-height:1.6;color:var(--muted);margin:12px 0}
+
+.assessment-panel{margin:18px 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:#f5f7f1}
+.assessment-feedback{margin-top:14px;padding:16px;border-radius:10px;background:var(--paper);border-left:4px solid var(--orange)}
+.assessment-correct{border-left-color:var(--green)}
+.assessment-grammar_error,.assessment-task-mismatch{border-left-color:#b15b45}
+.assessment-verdict{font-size:18px}.assessment-original{font-size:17px;white-space:pre-wrap;overflow-wrap:anywhere;margin-top:12px}
+.assessment-feedback mark{background:#ffdfba;color:var(--ink);padding:0 2px;border-radius:3px}
+.assessment-feedback li{line-height:1.8;margin-bottom:8px}.assessment-stats{display:flex;flex-wrap:wrap;gap:12px 24px}
+.assessment-stats span{font-size:13px}.assessment-stats strong{font-size:20px;margin-left:6px;color:var(--green)}
+.assessment-history{padding:12px 0;border-top:1px solid var(--line)}.assessment-history summary{cursor:pointer;line-height:1.6;font-size:13px}
+#assessment-settings select{display:block;max-width:100%;margin:8px 0 16px;padding:9px;border:1px solid var(--line);border-radius:8px;background:var(--paper)}
+#assessment-auth-message{overflow-wrap:anywhere}

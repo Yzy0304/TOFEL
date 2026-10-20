@@ -26,9 +26,9 @@ jobs:
       - name: Prepare static assets
         run: |
           mkdir -p _site/data _site/docs
-          cp index.html styles.css app.js core.js session.js favicon.svg _site/
+          cp index.html styles.css app.js core.js session.js assessment.js assessment-ui.js favicon.svg _site/
           cp data/cards.json _site/data/
-          cp docs/handbook.md docs/study-plan.md _site/docs/
+          cp docs/handbook.md docs/study-plan.md docs/assessment.md _site/docs/
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

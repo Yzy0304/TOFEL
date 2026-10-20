@@ -2,3 +2,9 @@
 node_modules/
 qa/
 *.log
+
+.local/
+.env
+.env.*
+accounts.json
+service.lock

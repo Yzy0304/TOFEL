@@ -1,3 +1,4 @@
+import {validateAssessment,assessmentRating,normalizeText,MODES} from './assessment.js';
 const DAY = 86400000;
 const MODULES = ['email', 'discussion', 'repeat', 'interview'];
 const RATINGS = ['again', 'hard', 'good'];
@@ -111,6 +112,15 @@ export function progressCounts(state, cards, now = Date.now()) {
       reviewed: today.reviewIds.filter(id => knownIds.has(id)).length, attempts: today.attempts,
       correct: today.correct, accuracy: today.attempts ? Math.round(today.correct / today.attempts * 100) : 0, completed: today.completed },
     modules, week,
+    assessment: {
+      attempts: records.reduce((n,r)=>n+(r.assessment?.attempts??0),0),
+      grammarErrors: records.reduce((n,r)=>n+(r.assessment?.grammarErrors??0),0),
+      unnatural: records.reduce((n,r)=>n+(r.assessment?.unnatural??0),0),
+      correct: records.reduce((n,r)=>n+(r.assessment?.correct??0),0),
+      taskErrors: records.reduce((n,r)=>n+(r.assessment?.taskErrors??0),0),
+      stable: records.filter(r=>r.assessment?.streak>=2&&new Set(r.assessment.correctDates).size>=2).length,
+      history: (state.assessmentHistory??[]).filter(a=>knownIds.has(a.cardId)).slice(-20).reverse(),
+    },
   };
 }
 
@@ -131,9 +141,45 @@ export function makeCloze(card) {
     : { before: example.slice(0, index), after: example.slice(index + answer.length), answer };
 }
 
-export function normalizeAnswer(text) {
-  return String(text ?? '').normalize('NFKC').toLowerCase().replace(/[’‘ʼ`]/g, "'")
-    .trim().replace(/\s+/g, ' ').replace(/[.!?,;:。！？、，；：…]+$/u, '').trim();
+export function normalizeAnswer(text) { return normalizeText(text); }
+
+export function recordHint(state, cardId, now = Date.now()) {
+  timestamp(now);
+  if (typeof cardId !== 'string' || !cardId.trim() || UNSAFE.has(cardId)) throw new TypeError('Invalid hint card');
+  const next = clone(state), day = ensureDay(next, dayKey(now));
+  day.hintIds ??= [];
+  addUnique(day.hintIds, cardId);
+  return next;
+}
+
+export function recordAssessment(state, attempt, now = Date.now()) {
+  timestamp(now);
+  if (!attempt || typeof attempt.attemptId !== 'string' || !/^[A-Za-z0-9_-]{1,100}$/.test(attempt.attemptId)
+    || typeof attempt.cardId !== 'string' || !attempt.cardId.trim() || UNSAFE.has(attempt.cardId)
+    || !MODES.includes(attempt.mode) || typeof attempt.independent !== 'boolean'
+    || !['model','reference'].includes(attempt.source)) throw new TypeError('Invalid assessment attempt');
+  const result = validateAssessment(attempt.result, attempt.answer);
+  if ((state.assessmentHistory ?? []).some(item => item.attemptId === attempt.attemptId)) return clone(state);
+  const key = dayKey(now), day = state.days[key];
+  const practiced = day?.newIds.includes(attempt.cardId) || day?.reviewIds.includes(attempt.cardId);
+  const usedForMastery = attempt.independent && !practiced && !day?.hintIds?.includes(attempt.cardId);
+  const next = usedForMastery ? recordReview(state, attempt.cardId, assessmentRating(result), now) : clone(state);
+  if (usedForMastery) {
+    const record = next.cards[attempt.cardId];
+    const evidence = record.assessment ??= {attempts:0,grammarErrors:0,unnatural:0,correct:0,taskErrors:0,streak:0,correctDates:[]};
+    evidence.attempts++;
+    if (result.category === 'grammar_error') evidence.grammarErrors++;
+    else if (result.category === 'unnatural') evidence.unnatural++;
+    else if (result.taskMatch) evidence.correct++;
+    if (!result.taskMatch) evidence.taskErrors++;
+    if (assessmentRating(result) === 'good') {evidence.streak++;addUnique(evidence.correctDates,key);}
+    else evidence.streak = 0;
+  }
+  next.assessmentHistory = [...(next.assessmentHistory ?? []), {
+    attemptId:attempt.attemptId,cardId:attempt.cardId,mode:attempt.mode,answer:attempt.answer,
+    independent:attempt.independent,usedForMastery,source:attempt.source,at:now,result,
+  }].slice(-200);
+  return next;
 }
 
 function invalid(message) { throw new TypeError(`Invalid backup: ${message}`); }
@@ -191,7 +237,7 @@ export function validateImport(data, knownIdsArray) {
     }
     source = data.state;
   }
-  fields(source, ['version', 'settings', 'cards', 'days', 'session'], 'state');
+  fields(source, ['version', 'settings', 'cards', 'days', 'session', 'assessmentHistory'], 'state');
   if (source.version !== 1) invalid('version');
   fields(source.settings, ['dailyMinutes', 'newLimit', 'planVersion'], 'settings');
   if (has(source.settings, 'planVersion') && ![2, 3].includes(source.settings.planVersion)) invalid('plan version');
@@ -208,7 +254,7 @@ export function validateImport(data, knownIdsArray) {
   plain(source.cards, 'cards');
   for (const [id, record] of Object.entries(source.cards)) {
     if (!known.has(id)) invalid('unknown card');
-    fields(record, ['introducedAt', 'lastReviewedAt', 'dueAt', 'intervalDays', 'streak', 'correctDates', 'weak', 'lastRating', 'transferAt'], 'card');
+    fields(record, ['introducedAt', 'lastReviewedAt', 'dueAt', 'intervalDays', 'streak', 'correctDates', 'weak', 'lastRating', 'transferAt', 'assessment'], 'card');
     const introducedAt = time(record.introducedAt, 'introduced time');
     const lastReviewedAt = time(record.lastReviewedAt, 'review time');
     const dueAt = time(record.dueAt, 'due time');
@@ -222,6 +268,17 @@ export function validateImport(data, knownIdsArray) {
     if (!RATINGS.includes(record.lastRating)) invalid('rating');
     result.cards[id] = { introducedAt, lastReviewedAt, dueAt, intervalDays, streak, correctDates,
       weak: boolean(record.weak, 'weak flag'), lastRating: record.lastRating };
+    if (has(record, 'assessment')) {
+      const a = record.assessment;
+      fields(a, ['attempts','grammarErrors','unnatural','correct','taskErrors','streak','correctDates'], 'assessment evidence');
+      const evidence = {};
+      for (const field of ['attempts','grammarErrors','unnatural','correct','taskErrors','streak']) evidence[field] = number(a[field],0,1000000,'assessment count',true);
+      if (evidence.grammarErrors+evidence.unnatural+evidence.correct>evidence.attempts || evidence.taskErrors>evidence.attempts || evidence.streak>evidence.correct) invalid('assessment counts');
+      if (!Array.isArray(a.correctDates)||a.correctDates.length>36600) invalid('assessment dates');
+      evidence.correctDates = a.correctDates.map(date);
+      if (new Set(evidence.correctDates).size!==evidence.correctDates.length || evidence.correctDates.some(value=>value<dayKey(introducedAt)||value>dayKey(lastReviewedAt)) || evidence.streak>evidence.correctDates.length) invalid('assessment dates');
+      result.cards[id].assessment = evidence;
+    }
     if (has(record, 'transferAt')) {
       const transferAt = time(record.transferAt, 'transfer time');
       if (transferAt < introducedAt || transferAt > lastReviewedAt) invalid('transfer timestamp order');
@@ -231,12 +288,25 @@ export function validateImport(data, knownIdsArray) {
   plain(source.days, 'days');
   for (const [key, day] of Object.entries(source.days)) {
     date(key);
-    fields(day, ['seconds', 'newIds', 'reviewIds', 'attempts', 'correct', 'completed'], 'day');
+    fields(day, ['seconds', 'newIds', 'reviewIds', 'attempts', 'correct', 'completed', 'hintIds'], 'day');
     const seconds = number(day.seconds, 0, 86400, 'seconds');
     const attempts = number(day.attempts, 0, 1000000, 'attempts', true);
     const correct = number(day.correct, 0, attempts, 'correct count', true);
     result.days[key] = { seconds, newIds: idList(day.newIds, known, 'new ids'), reviewIds: idList(day.reviewIds, known, 'review ids'),
       attempts, correct, completed: boolean(day.completed, 'completed flag') };
+    if (has(day, 'hintIds')) result.days[key].hintIds = idList(day.hintIds, known, 'hint ids');
+  }
+  if (has(source, 'assessmentHistory')) {
+    if (!Array.isArray(source.assessmentHistory)||source.assessmentHistory.length>200) invalid('assessment history');
+    const attemptIds = new Set();
+    result.assessmentHistory = source.assessmentHistory.map(a=>{
+      fields(a,['attemptId','cardId','mode','answer','independent','usedForMastery','source','at','result'],'assessment attempt');
+      if (typeof a.attemptId!=='string'||!/^[A-Za-z0-9_-]{1,100}$/.test(a.attemptId)||attemptIds.has(a.attemptId)||!known.has(a.cardId)||!MODES.includes(a.mode)||!['reference','model'].includes(a.source)) invalid('assessment attempt');
+      attemptIds.add(a.attemptId);
+      const independent=boolean(a.independent,'independent attempt'),usedForMastery=boolean(a.usedForMastery,'counted attempt');
+      if (usedForMastery&&!independent) invalid('assisted mastery');
+      return {attemptId:a.attemptId,cardId:a.cardId,mode:a.mode,answer:a.answer,independent,usedForMastery,source:a.source,at:time(a.at,'assessment time'),result:validateAssessment(a.result,a.answer)};
+    });
   }
   return result;
 }
