@@ -6,7 +6,7 @@ import {ChatGPTAuth,ServiceError} from './local/auth.mjs';
 import {ChatGPTProvider} from './local/provider.mjs';
 import {assessmentRequest,referenceAssessment} from './assessment.js';
 const ROOT=fileURLToPath(new URL('.',import.meta.url));
-const ASSETS=new Set(['index.html','styles.css','app.js','core.js','session.js','assessment.js','assessment-ui.js','favicon.svg','data/cards.json','docs/handbook.md','docs/study-plan.md','docs/assessment.md']);
+const ASSETS=new Set(['index.html','styles.css','app.js','core.js','session.js','sync-core.js','sync-client.js','sync-auth.js','sync-ui.js','sync-config.js','docs/sync.md','assessment.js','assessment-ui.js','favicon.svg','data/cards.json','docs/handbook.md','docs/study-plan.md','docs/assessment.md']);
 const MIME={'.html':'text/html','.js':'text/javascript','.css':'text/css','.json':'application/json','.svg':'image/svg+xml','.md':'text/plain'};
 function json(res,status,data){res.writeHead(status,{'content-type':'application/json; charset=utf-8'});res.end(JSON.stringify(data));}
 async function body(req){let text='';for await(const bytes of req){text+=bytes;if(Buffer.byteLength(text)>16000)throw new ServiceError('提交内容过大。',413);}try{const data=JSON.parse(text);if(!data||typeof data!=='object'||Array.isArray(data))throw Error();return data;}catch{throw new ServiceError('请求格式无效。');}}
@@ -14,7 +14,7 @@ export async function createLocalServer({port=4173,auth=new ChatGPTAuth(),provid
  await auth.initialize();provider??=new ChatGPTProvider(auth);const cards=JSON.parse(await readFile(join(root,'data/cards.json'),'utf8'));let origin,busy=false;
  const http=createServer(async(req,res)=>{
   res.setHeader('cache-control','no-store');res.setHeader('referrer-policy','no-referrer');res.setHeader('x-content-type-options','nosniff');res.setHeader('x-frame-options','DENY');
-  res.setHeader('content-security-policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
+  res.setHeader('content-security-policy',"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; media-src 'self' blob:; connect-src 'self' https://yrdxfkjjbttdkvnshpsq.supabase.co; frame-ancestors 'none'; base-uri 'none'; form-action 'self'");
   try{
    if(req.headers.host!==new URL(origin).host)throw new ServiceError('请使用本机服务提供的地址。',403);
    const url=new URL(req.url,origin),path=url.pathname;
